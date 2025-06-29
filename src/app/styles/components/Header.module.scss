@@ -1,0 +1,45 @@
+// Header component styles
+@import "../../_variables";
+
+.header {
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+  :global(.dark) & {
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+  }
+
+  &__container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: $breakpoint-sm) {
+      padding: 0 1.5rem;
+    }
+
+    @media (min-width: $breakpoint-lg) {
+      padding: 0 2rem;
+    }
+  }
+
+  &__logo {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  &__logo_text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+  }
+}

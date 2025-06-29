@@ -1,0 +1,98 @@
+[
+  {
+    "id": "classic-tshirt",
+    "name": "Classic T-Shirt",
+    "price": 29.99,
+    "description": "Premium quality cotton t-shirt with a comfortable fit. Available in multiple colors and sizes.",
+    "shortDescription": "Premium cotton t-shirt",
+    "images": [
+      "/products/tshirt-1.jpg",
+      "/products/tshirt-2.jpg",
+      "/products/tshirt-3.jpg"
+    ],
+    "pdfUrl": "/pdfs/classic-tshirt-details.pdf",
+    "category": "clothing",
+    "inStock": true,
+    "featured": true
+  },
+  {
+    "id": "denim-jacket",
+    "name": "Denim Jacket",
+    "price": 89.99,
+    "description": "Classic denim jacket with a modern twist. Durable material and stylish design make it perfect for any casual outfit.",
+    "shortDescription": "Classic denim jacket with modern design",
+    "images": [
+      "/products/jacket-1.jpg",
+      "/products/jacket-2.jpg",
+      "/products/jacket-3.jpg"
+    ],
+    "pdfUrl": "/pdfs/denim-jacket-details.pdf",
+    "category": "clothing",
+    "inStock": true,
+    "featured": true
+  },
+  {
+    "id": "leather-wallet",
+    "name": "Leather Wallet",
+    "price": 49.99,
+    "description": "Genuine leather wallet with multiple card slots and a coin pocket. Slim design fits comfortably in your pocket.",
+    "shortDescription": "Genuine leather wallet",
+    "images": [
+      "/products/wallet-1.jpg",
+      "/products/wallet-2.jpg",
+      "/products/wallet-3.jpg"
+    ],
+    "pdfUrl": "/pdfs/leather-wallet-details.pdf",
+    "category": "accessories",
+    "inStock": true,
+    "featured": false
+  },
+  {
+    "id": "sneakers",
+    "name": "Premium Sneakers",
+    "price": 119.99,
+    "description": "Comfortable and stylish sneakers for everyday wear. Breathable material and cushioned insole provide all-day comfort.",
+    "shortDescription": "Comfortable and stylish sneakers",
+    "images": [
+      "/products/sneakers-1.jpg",
+      "/products/sneakers-2.jpg",
+      "/products/sneakers-3.jpg"
+    ],
+    "pdfUrl": "/pdfs/sneakers-details.pdf",
+    "category": "footwear",
+    "inStock": true,
+    "featured": true
+  },
+  {
+    "id": "backpack",
+    "name": "Travel Backpack",
+    "price": 79.99,
+    "description": "Spacious backpack with multiple compartments, perfect for travel or daily use. Water-resistant material keeps your belongings safe.",
+    "shortDescription": "Spacious water-resistant backpack",
+    "images": [
+      "/products/backpack-1.jpg",
+      "/products/backpack-2.jpg",
+      "/products/backpack-3.jpg"
+    ],
+    "pdfUrl": "/pdfs/backpack-details.pdf",
+    "category": "accessories",
+    "inStock": true,
+    "featured": false
+  },
+  {
+    "id": "watch",
+    "name": "Minimalist Watch",
+    "price": 149.99,
+    "description": "Elegant minimalist watch with a stainless steel case and leather strap. Water-resistant up to 30 meters.",
+    "shortDescription": "Elegant minimalist watch",
+    "images": [
+      "/products/watch-1.jpg",
+      "/products/watch-2.jpg",
+      "/products/watch-3.jpg"
+    ],
+    "pdfUrl": "/pdfs/watch-details.pdf",
+    "category": "accessories",
+    "inStock": true,
+    "featured": true
+  }
+]

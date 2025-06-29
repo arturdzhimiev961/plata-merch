@@ -1,0 +1,139 @@
+// OrderModal component styles
+@use "sass:color";
+@import "../../_variables";
+
+.order_modal {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+
+  &--hidden {
+    display: none;
+  }
+
+  &__content {
+    background-color: white;
+    border-radius: $border-radius;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+
+    :global(.dark) & {
+      background-color: #1a1a1a;
+    }
+  }
+
+  &__body {
+    padding: 1.5rem;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  &__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  &__close_button {
+    color: #6b7280;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: #374151;
+    }
+
+    :global(.dark) & {
+      color: #9ca3af;
+
+      &:hover {
+        color: #e5e7eb;
+      }
+    }
+  }
+
+  &__success_message {
+    background-color: rgba(74, 222, 128, 0.1);
+    color: #22c55e;
+    padding: 1rem;
+    border-radius: $border-radius;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+
+    :global(.dark) & {
+      background-color: rgba(22, 163, 74, 0.2);
+      color: #4ade80;
+    }
+  }
+
+  &__success_icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-right: 0.5rem;
+  }
+
+  &__error_message {
+    background-color: rgba(239, 68, 68, 0.1);
+    color: #ef4444;
+    padding: 1rem;
+    border-radius: $border-radius;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+
+    :global(.dark) & {
+      background-color: rgba(220, 38, 38, 0.2);
+      color: #f87171;
+    }
+  }
+
+  &__error_icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-right: 0.5rem;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  &__submit_button {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  &__loading_indicator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__spinner {
+    animation: spin 1s linear infinite;
+    margin-right: 0.5rem;
+    height: 1rem;
+    width: 1rem;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

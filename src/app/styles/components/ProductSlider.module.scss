@@ -1,0 +1,98 @@
+// ProductSlider component styles
+@use "sass:color";
+@import "../../_variables";
+
+.product_slider {
+  padding: 2rem 0;
+  background-color: #f9f9f9;
+
+  :global(.dark) & {
+    background-color: #111;
+  }
+
+  &__container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+
+    @media (min-width: $breakpoint-sm) {
+      padding: 0 1.5rem;
+    }
+
+    @media (min-width: $breakpoint-lg) {
+      padding: 0 2rem;
+    }
+  }
+
+  &__title {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  &__loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+  }
+
+  &__spinner {
+    width: 3rem;
+    height: 3rem;
+    border: 0.25rem solid rgba(0, 0, 0, 0.1);
+    border-top-color: $primary-color;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+
+    :global(.dark) & {
+      border-color: rgba(255, 255, 255, 0.1);
+      border-top-color: $primary-color;
+    }
+  }
+
+  &__slide {
+    padding: 1rem;
+    height: 100%;
+  }
+}
+
+// Global styles for Swiper
+.swiper_wrapper {
+  // This is a local class that will be used to make the global selectors "pure"
+
+  :global(.product-slider) {
+    padding-bottom: 3rem !important;
+  }
+
+  :global(.product-slider .swiper-button-next),
+  :global(.product-slider .swiper-button-prev) {
+    color: $primary-color;
+  }
+
+  :global(.product-slider .swiper-button-next:after),
+  :global(.product-slider .swiper-button-prev:after) {
+    font-size: 1.5rem;
+  }
+
+  :global(.product-slider .swiper-pagination-bullet) {
+    background-color: #ccc;
+    opacity: 0.5;
+  }
+
+  :global(.product-slider .swiper-pagination-bullet-active) {
+    background-color: $primary-color;
+    opacity: 1;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
